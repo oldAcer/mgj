@@ -1,0 +1,115 @@
+@import'reset.css';
+@function cal($num){
+    @return $num/20;
+}
+.header{
+    width: 100%;
+    height: cal(40rem);
+    position: relative;
+    border-bottom: 1px solid #c9c7c8;
+    background-color: #FAFAFA;
+    .previous{
+        width:cal(40rem);
+        height:100%;
+        float: left;
+        a{
+            line-height:cal(40em);
+            text-align: center;
+            font-size: cal(12rem);
+            color:#5e5e5e;
+            font-family: "iconfont";
+            width: 100%;
+            height: 100%;
+            line-height:cal(40rem);
+            display: block; 
+        }
+    }
+    .login{
+        width: cal(245rem);
+        height: 100%;
+        float: left;
+        font-size:cal(16rem);
+        line-height: cal(40rem);
+        text-align: center;
+        font-weight: bold;
+    }
+}
+.middle{
+    width: cal(294rem);
+    padding:cal(20rem) cal(13rem) 0;
+    position: relative;
+    p{
+        width: 100%;
+        text-align: center;
+        font-size: cal(13rem);
+        color: #5e5e5e;
+        overflow:hidden;
+        color:#999;
+    }
+    .phone{
+        color: #333;
+    }
+    .country{
+        width: 100%;
+        height:cal(24rem);
+        margin: cal(17rem) 0;
+        line-height:cal(24rem);
+        span{
+            float: left;
+            height:100%;
+            &:first-child{
+                margin-left:cal(105rem);
+                font-size:cal(22rem);
+            }
+            &:nth-child(2){
+               font-size:cal(10rem);
+               padding: 0 cal(8rem); 
+            }
+            &:nth-child(3){
+               font-size:cal(17rem);
+               color: #999;
+            }
+            &:nth-child(4){
+                float: right;
+                font-family:"iconfont";
+                font-size:cal(18rem);
+                color: #999;
+            }
+        }
+    }
+    input{
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #ededed;
+        font-size:cal(20rem);
+        width:100%;
+        display: block;
+        height: cal(30rem);
+        text-align: center;
+        margin: cal(15rem) 0;
+        &[type=button]{
+            height: cal(40rem);
+            background: #ff1877;
+            border-radius:cal(3rem);
+            border: none;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            line-height:cal(40rem) ;
+        }
+    }
+    a{
+        position: absolute;
+        height: cal(14rem);
+        font-size:cal(14rem);
+        line-height:cal(14rem);
+        right: cal(13rem);
+        top:cal(222rem);
+        display: block;
+        font-style: normal;
+        color:rgb(255, 104, 133);
+        background-color: white;
+    }
+}

@@ -1,0 +1,157 @@
+@import'reset.css';
+@function cal($num){
+    @return $num/20;
+}
+body{
+    background:#f6f6f6;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: #9e9e9e;
+}
+i{
+    font-style: normal;
+}
+.item-items{
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    padding-top: cal(10rem);
+    margin-bottom: cal(10rem);
+    .title{
+       width: 100%;
+       text-align: center;
+       background: url(../img/title-line.png) no-repeat cal(94rem) cal(9rem);
+       background-size:cal(130rem) auto;
+       font-size: cal(14rem);
+       height: cal(18rem);
+       line-height:cal(18rem);
+       margin-bottom: cal(8rem);
+    }
+    a{
+        width: 25%;
+        height:cal(72rem);
+        float: left;
+        img{
+            width: cal(51rem);
+            display: block;
+            margin-left: cal(15rem);
+        }
+        p{
+            font-size:cal(12rem);
+            text-align: center;
+            color: #333;
+        }
+    }
+}
+.good-goods{
+    width: 100%;
+    overflow:hidden;
+    .good-title{
+        width: 100%;
+        text-align: center;
+        background: url(../img/title-line.png) no-repeat cal(97rem) cal(9rem);
+        background-size:cal(130rem) auto;
+        font-size: cal(14rem);
+        height: cal(18rem);
+        line-height:cal(18rem);
+        margin: cal(8rem) 0;
+    }
+    .nav{
+        width: 100%;
+        height: cal(35rem);
+        background:#ff0077;
+        color: white;
+        font-size: 12px;
+        line-height:cal(35rem);
+        margin-top: cal(5rem);
+        span{
+            float: left;
+            width: 16%;
+            height:100%;
+            text-align: center;
+            position: relative;
+            margin:0 cal(6.4rem);
+            box-sizing:border-box;
+            border-bottom-color:#ff0077 ;
+            border-bottom-width:2px;
+            border-bottom-style:solid;
+            &:first-child{
+                border-bottom:2px solid white;
+            } 
+            &:first-child:after{
+                width: 0.3rem;
+                height: 80%;
+                background-image: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0) 55%);
+                position: absolute;
+                right:cal(-10rem);
+                top:10%;
+                content: "";
+                display: block
+            }
+        }
+    }
+    .good{
+        width: cal(150rem);
+        height: cal(264.5rem);
+        float: left;
+        margin-left: cal(6.67rem);
+        margin-top: cal(7rem);
+        background-color:white ;
+        img{
+            width: cal(150rem);
+            display: block;
+        }
+        p{
+            width:cal(138rem);
+            height:cal(34rem);
+            margin:cal(5rem) cal(6rem);
+            overflow: hidden;
+            span{
+                float:left;
+                margin: 0 0 cal(2rem) cal(3rem);
+                background: #eff3f6;
+                color:#5a6f7a;
+                font-size: cal(11rem);
+                padding: 0 cal(2rem);
+            }
+            .jp{
+                background:#F9E4A8;
+            }
+            .hot{
+                background:#FF743C;
+                color: white;
+            }
+        }
+        .price{
+           width:cal(138rem);
+           height:cal(20rem);
+           overflow: hidden;
+           margin:0 cal(6rem);
+           span{
+               float: left;
+               font-size:cal(15rem);
+               height: cal(20rem);
+               line-height:cal(20rem);
+               font-weight: 600;
+           }
+           i{
+               float: right;
+               font-size: cal(11rem);
+               height: cal(20rem);
+               line-height:cal(20rem);
+               color: #9E9E9E;
+               margin-right: cal(2rem);
+           }
+           s{
+               float: right;
+               height: cal(11rem);
+               width: cal(11rem);
+               background: url(../img/star.png) no-repeat;
+               background-size:cal(11rem) auto;
+               margin-top: cal(5rem);
+           }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+@import'reset.css';
+@function cal($num){
+    @return $num/20;
+}
+.header{
+    width: 100%;
+    height: cal(37.5rem);
+    position: relative;
+    border-bottom: 1px solid #c9c7c8;
+    background-color: #FAFAFA;
+    .previous{
+        width:cal(37.5rem);
+        height:100%;
+        float: left;
+        a{
+            line-height:cal(37.5em);
+            text-align: center;
+            font-size: cal(12rem);
+            color:#5e5e5e;
+            font-family: "iconfont";
+            width: 100%;
+            height: 100%;
+            line-height:cal(37.5rem);
+            display: block; 
+        }
+    }
+    .login{
+        width: cal(245rem);
+        height: 100%;
+        float: left;
+        font-size:cal(14rem);
+        line-height: cal(37.5rem);
+        text-align: center;
+    }
+    .forget{
+        position: absolute;
+        right: cal(5rem);
+        top: 0;
+        height:100%;
+        line-height: cal(37.5rem);
+        font-size: cal(12rem);
+        color:#5e5e5e;
+    }
+}
+.middle{
+    width: cal(294rem);
+    padding:cal(40rem) cal(13rem) 0;
+    p{
+        width: 100%;
+        text-align: center;
+        font-size:cal(12rem) ;
+        color: #5e5e5e;
+        overflow:hidden;
+        span{
+            &:first-child{
+                float: left;
+            }
+            &:nth-child(2){
+                float: right;
+                color: #ff5777;
+            }
+        }
+    }
+    input{
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #ededed;
+        font-size:cal(20rem);
+        width:100%;
+        display: block;
+        height: cal(30rem);
+        text-align: center;
+        margin: cal(15rem) 0;
+        &[type=button]{
+            height: cal(40rem);
+            background: #ff1877;
+            border-radius:cal(3rem);
+            border: none;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            line-height:cal(40rem) ;
+        }
+    }
+    .line{
+        width: 100%;
+        overflow: hidden;
+        margin-top: cal(35rem);
+        i{
+            width: cal(122rem);
+            height: 1px;
+            display: block;
+            background: #EDEDED;
+            float: left;
+            margin-top:cal(6rem) ;
+        } 
+        span{
+            width:cal(50rem);
+            height:cal(13rem);
+            display: block;
+            float: left;
+            color: #EDEDED;
+            font-size: cal(12rem);
+            text-align: center;
+            line-height: cal(13rem);
+        }
+    }
+    a{
+        display: block;
+        width:cal(90rem);
+        height: cal(90rem);
+        background: url(../img/qqlogin210x210.png) no-repeat;
+        background-size: 100%;
+        margin: cal(20rem) auto;
+    }
+}

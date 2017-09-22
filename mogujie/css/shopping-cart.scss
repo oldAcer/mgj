@@ -1,0 +1,222 @@
+@import'reset.css';
+@function cal($num) {
+    @return $num/20;
+}
+@mixin check{
+    width:cal(18rem);
+    height:cal(18rem);
+    float:left;
+}
+body {
+    background: #f6f6f6;
+}
+
+.header {
+    width: 100%;
+    height: cal(40rem);
+    border-bottom: 1px solid #c9c7c8;
+    background-color: #FAFAFA;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    .previous {
+        width: cal(40rem);
+        height: 100%;
+        float: left;
+        a {
+            line-height: cal(40em);
+            text-align: center;
+            font-size: cal(12rem);
+            color: #5e5e5e;
+            font-family: "iconfont";
+            width: 100%;
+            height: 100%;
+            line-height: cal(40rem);
+            display: block;
+        }
+    }
+    .login {
+        width: cal(245rem);
+        height: 100%;
+        float: left;
+        font-size: cal(16rem);
+        line-height: cal(40rem);
+        text-align: center;
+        font-weight: 400;
+    }
+    .forget {
+        position: absolute;
+        right: cal(5rem);
+        top: 0;
+        height: 100%;
+        line-height: cal(40rem);
+        font-size: cal(12rem);
+        color: #5e5e5e;
+        width: cal(50rem);
+        i {
+            font-family: "iconfont";
+            position: absolute;
+            display: block;
+            height: 100%;
+            line-height: cal(40rem);
+            right: cal(5rem);
+            top: 0;
+            font-style: normal;
+            font-size: cal(16rem);
+        }
+    }
+}
+.total-goods{
+    width: 100%;
+    padding:cal(40rem) 0;   
+    .goods {
+        width: 100%;
+        margin: cal(12rem) 0;
+        padding-bottom:cal(12rem);
+        border-top: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+        background: white;
+        .tit{
+            width: 100%;
+            height:cal(32.5rem);
+            font-size:cal(12rem);
+            border-bottom: 1px solid #d8d8d8;
+            overflow:hidden;
+            .all-check{              
+                @include check;
+                 margin:cal(8rem) cal(12rem);
+            }
+            span{
+                height: 100%;
+                line-height:cal(32.5rem);
+                float: left;
+            }
+            i{ 
+               float:right;
+               height: 100%;
+               font-style:normal;
+               line-height:cal(32.5rem);
+               margin-right: cal(12rem);
+            }
+        }
+        .product-o,.product-t{
+            width:cal(296rem);
+            padding:cal(12rem) cal(12rem) 0;
+            height: cal(85rem);
+            .check{
+                @include check ;
+                margin:cal(33rem) cal(12rem) auto 0;
+            }
+            a{
+                float: left;
+                width:cal(61.5rem);
+                height:cal(81rem);
+                text-align: center;
+                img{
+                    width:cal(54rem);
+                    margin-top:cal(4rem);
+                }
+            }
+            .details{
+                width: cal(196rem);
+                height:100%;
+                float: left;
+                margin-left:cal(8rem);
+                position: relative;
+                p{
+                   font-size:cal(11rem);
+                   width: 100%;
+                }
+                span{
+                   width: 100%;
+                   height:cal(34rem);
+                   font-size:cal(11rem);
+                   color: #999;
+                }
+                .price{
+                    width:100%;
+                    height:cal(15rem);
+                    position: absolute;
+                    right:0;
+                    bottom:0;
+                    span{
+                        color:#333;
+                        float: left;
+                        height:100%;
+                        line-height:cal(15rem);
+                        font-size: cal(14rem);
+                        width: auto;
+                        i{
+                            line-height:cal(15rem);
+                            font-size: cal(14rem); 
+                            color:#333;
+                        }
+                    }
+                    del{
+                        float: left;
+                        width: auto;
+                        font-size:cal(12rem);
+                        height: 100%;
+                        line-height:cal(15rem);
+                        color: #999;
+                        margin-left: cal(5rem);
+                    }
+                    i{
+                        width: auto;
+                        float: right;
+                        font-size: cal(12rem);
+                        font-style: normal;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    width: 100%;
+    height:cal(42.6rem);
+    border-top: 1px solid #c9c7c8;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    background: white;
+    #all{
+        @include check;
+        margin:cal(12.3rem) cal(8rem) cal(12.3rem) cal(13rem);
+    }
+    label{
+        font-size:cal(12rem);
+        color:#5e5e5e;
+        height: 100%;
+        float: left;
+        margin-right: cal(10rem);
+        line-height:cal(42.6rem);
+    }
+    i{  
+        font-size:cal(12rem);
+        color:#5e5e5e;
+        height: 100%;
+        float: left;
+        font-style: normal;
+        line-height:cal(42.6rem);
+        color:#ee4566;
+        s{
+            text-decoration: none;
+        }
+    }
+    .button{
+        width: cal(85rem);
+        height: cal(30rem);
+        line-height:cal(30rem);
+        text-align: center;
+        border-radius:cal(3rem) ;
+        float: right;
+        background-color:#ff5777;
+        color: white;
+        margin-top: cal(8rem);
+        margin-right:cal(18rem);
+        font-size: cal(14rem);
+    }
+}

@@ -1,0 +1,12 @@
+body .layer-ext-yourskin .layui-layer-content{
+    min-width: 20%;
+    max-width: 70%;
+    word-wrap: break-word;
+    padding: 0.2rem 0.24rem;
+    font-size: 0.6rem;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+    border-radius:0.2rem;
+    background-color: rgba(225,42,82,.7);
+}
